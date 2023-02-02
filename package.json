@@ -1,0 +1,30 @@
+{
+  "name": "the-adorned-project",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Adorned backend",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/strapi": "4.6.0",
+    "@strapi/plugin-users-permissions": "4.6.0",
+    "@strapi/plugin-i18n": "4.6.0",
+    "better-sqlite3": "7.4.6"
+  },
+  "author": {
+    "name": "lovisgod"
+  },
+  "strapi": {
+    "uuid": "352d2d9a-fb0b-4e45-b173-ab739f775b3c"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
