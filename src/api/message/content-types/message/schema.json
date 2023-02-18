@@ -4,7 +4,8 @@
   "info": {
     "singularName": "message",
     "pluralName": "messages",
-    "displayName": "Message"
+    "displayName": "Message",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -26,26 +27,17 @@
     "date_released": {
       "type": "datetime"
     },
-    "track": {
-      "allowedTypes": [
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
-    },
-    "track_cover": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
-    },
     "categories": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::category.category",
       "mappedBy": "messages"
+    },
+    "track": {
+      "type": "string"
+    },
+    "track_cover": {
+      "type": "string"
     }
   }
 }
